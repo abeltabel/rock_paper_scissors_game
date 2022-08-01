@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-  <h1>Thanks for playing!</h1>
-  
-  <script src="script.js"></script>
+
+
+
+    <main>
+        <div>
+            <!-- Computers choice field -->
+            <div>
+                <h2>Computer's Choice: <span id="computer"></span></h2>
+            </div>
+<!-- Results of the match win/loss/draw-->
+            <div>
+                <h2>Results: <span id="result"></span></h2>
+            </div>
+<!-- How many wins the player has -->
+            <div class="playerScore">
+                <h2>Wins: <span class="w-count count"></span></h2>
+            </div>
+<!-- How many times the player has lost -->
+            <div class="computerScore">
+                <h2>Losses: <span class="l-count count"></span></h2>
+            </div>
+<!-- How many times the match ended in a draw -->
+            <div class="drawScore">
+                <h2>Draws: <span class="d-count count"></span></h2>
+            </div>
+    </main>
+
+
+    <!-- java script reference. -->
+    <script src="./assets/script.js"></script>
 </body>
+
+
 </html>
