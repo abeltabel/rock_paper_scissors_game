@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 
 <head>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-
-
-
-    <main>
-        <div>
-            <!-- Computers choice field -->
-            <div>
-                <h2>Computer's Choice: <span id="computer"></span></h2>
+    <div class="container1" id="container1">
+        <div class="score_container">
+            <div class="heading">
+                Rock
+                Paper
+                Scissors
             </div>
-<!-- Results of the match win/loss/draw-->
-            <div>
-                <h2>Results: <span id="result"></span></h2>
+            <div class="score">
+                <h2 class="score_heading">Score</h2>
+                <span id="score_count">0</span>
             </div>
-<!-- How many wins the player has -->
-            <div class="playerScore">
-                <h2>Wins: <span class="w-count count"></span></h2>
-            </div>
-<!-- How many times the player has lost -->
-            <div class="computerScore">
-                <h2>Losses: <span class="l-count count"></span></h2>
-            </div>
-<!-- How many times the match ended in a draw -->
-            <div class="drawScore">
-                <h2>Draws: <span class="d-count count"></span></h2>
-            </div>
-    </main>
+        </div>
+        <div class="options">   
+            <button class="pick" id="rock">Rock</button>
+            <button class="pick" id="paper">Paper</button>
+            <button class="pick" id="scissors">Scissors</button>
+        </div>
 
+    </div>
 
-    <!-- java script reference. -->
-    <script src="./assets/script.js"></script>
+    <div class="container2" id="container2">
+        <div class="score_container">
+            <div class="heading">
+                Rock
+                Paper
+                Scissors
+            </div>
+            <div class="score">
+                <h2 class="score_heading">Score</h2>
+                <span id="score_count2">0</span>
+            </div>
+
+        
+          </div>
+
+        <div class="you">
+            <span>You chose</span>
+            <span id="you_choosed">Temprorary</span>
+        </div>
+        <div class="computer">
+            <span>Computer Chose</span>
+            <span id="comp_choosed">Temprorary</span>
+        </div>
+        <div class="middle">
+            <span id="result">Temprorary</span>
+            <button id="play_again">Play Again</button>
+        </div>
+    </div>
+    <script src="./assets/scriptv2.js"></script>
 </body>
 
 
